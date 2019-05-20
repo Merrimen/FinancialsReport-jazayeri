@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+
+    <mohammad.financialsreport.customViews.MyTextView
+        android:id="@+id/reports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reports"
+        android:textSize="24sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+
+        <mohammad.financialsreport.customViews.MyImageView
+            android:id="@+id/arrowup"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/arrowup" />
+
+        <mohammad.financialsreport.customViews.MyTextView
+            android:id="@+id/creditor"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:text="@string/Creditor"
+            android:textColor="@color/creditor"
+            android:textSize="@dimen/_12ssp" />
+
+        <mohammad.financialsreport.customViews.MyImageView
+            android:id="@+id/arrowdown"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/arrowdown" />
+
+        <mohammad.financialsreport.customViews.MyTextView
+            android:id="@+id/debtor"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="@string/Debtor"
+            android:textColor="@color/debtor"
+            android:textSize="@dimen/_12ssp" />
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TabItem
+            android:text="کل"
+            android:id="@+id/tabitem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TabItem
+            android:text="پروژه ها"
+            android:id="@+id/tabitem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

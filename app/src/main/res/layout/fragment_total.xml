@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/_12sdp"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <mohammad.financialsreport.customViews.MyTextView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/pic"
+        android:layout_gravity="right"
+        android:text="عکس"
+        android:gravity="center"
+        android:background="@drawable/picture"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp" />
+</RelativeLayout>
+
+</LinearLayout>
