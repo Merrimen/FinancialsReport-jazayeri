@@ -2,9 +2,59 @@
     <string name="app_name">گزارشات مالی</string>
     <string name="month">تمامی ماه های 1398</string>
     <string name="reports">گزارش ها</string>
-    <string name="Creditor">بستانکار 10 میلیون ریال</string>
-    <string name="Debtor">بدهکار 1 میلیون ریال</string>
+    <string name="Creditor">پرداختی 1ملیون تومان</string>
+    <string name="Debtor">باقیمانده 1 ملیون تومان</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reward">پاداش: 1/5 ملیون تومان</string>
+    <string name="penalty">جریمه: 500 هزار تومان</string>
+    <string name="tax">مالیات: 1 ملیون تومان</string>
+    <string name="function">کارکرد: 5 ملیون تومان</string>
+    <string name="startdate">تاریخ شروع</string>
+    <string name="enddate">تاریخ پایان</string>
+    <string name="operation">کارکرد</string>
+    <string name="clearing">تسویه</string>
+    <string name="projectAll">همه پروژه ها</string>
+    <string name="remain">باقیمانده</string>
+    <string name="deposited">پرداختی</string>
+    <string name="account_bank"> شماره حساب</string>
+    <string name="username">نام کاربری</string>
+    <string name="password">رمز عبور</string>
+    <string name="login">ورود</string>
+    <string name="input_number">درج حساب بانک</string>
+    <string name="name_account_owner">نام صاحب حساب</string>
+    <string name="name_bank">نام بانک</string>
+    <string name="succesful_insert_card_number">شماره کارت با موفقیت ثبت شد</string>
+    <string name="wrong_number">شماره اشتباه است</string>
+    <string name="cancel">Cancel</string>
+    <string name="successful_insert_account_number">شماره حساب با موفقیت ثبت شد</string>
+    <string name="card_number">شماره کارت</string>
+    <string name="name_card_owner"> نام صاحب کارت</string>
+    <string name="ok">OK</string>
+    <string name="account_number">شماره حساب</string>
+    <string name="ok_bashe">باشه</string>
+    <string name="never_mind">بیخیال</string>
+    <string name="today">امروز</string>
+    <string name="remain_money">مانده</string>
+    <string name="paid">پرداختی</string>
+    <string name="clearing_report">گزارشات تسویه</string>
+    <string name="project1">پروژه اول</string>
+    <string name="project2">پروژه دوم</string>
+    <string name="project3">پروژه سوم</string>
+    <string name="project4">پروژه چهارم</string>
+    <string name="project5">پروژه پنجم</string>
+    <string name="select_project">پروژه مورد نظر را انتخاب نمایید</string>
+    <string name="insert">ثبت</string>
+    <string name="successfulyInsert">با موفقیت ثبت شد</string>
+    <string name="ErrorInsertAccount">همه فیلدها باید تکمیل شود</string>
+    <string name="Bonus">پاداش</string>
+    <string name="fine">جریمه</string>
+    <string name="Taxes">مالیات</string>
+    <string name="Rial">ریال</string>
+    <string name="enter_again">دوباره وارد شوید</string>
+    <string name="pass_is_wrong">رمز عبور اشتباه است</string>
+    <string name="user_doesnot_exist">نام کاربری وجود ندارد</string>
+
+
 </resources>

@@ -1,85 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="12dp"
-    tools:context=".MainActivity">
 
 
-    <mohammad.financialsreport.customViews.MyTextView
-        android:id="@+id/reports"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/reports"
-        android:textSize="24sp" />
-
-
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal"
-        android:padding="@dimen/_10sdp">
+        android:layout_height="match_parent"
+        android:background="#f2f9f5"
+        android:orientation="vertical"
+        android:padding="12dp"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <mohammad.financialsreport.customViews.MyTextView
+                android:id="@+id/reports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reports"
+                android:textSize="24sp" />
+
+            <mohammad.financialsreport.customViews.MyImageView
+                android:visibility="invisible"
+                android:id="@+id/check_account"
+                android:src="@drawable/checkaccount"
+                android:layout_marginLeft="@dimen/_55sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp" />
+            <mohammad.financialsreport.customViews.MyButton
+                android:layout_marginTop="@dimen/_15sdp"
+                android:id="@+id/btn_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/my_chart"
+                android:padding="@dimen/_2sdp"
+                android:text="@string/input_number" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp">
+
+            <mohammad.financialsreport.customViews.MyImageView
+                android:id="@+id/arrowup"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/balance" />
+
+            <mohammad.financialsreport.customViews.MyTextView
+                android:id="@+id/creditor"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:text="@string/Creditor"
+                android:textColor="@color/creditor"
+                android:textSize="@dimen/_12ssp" />
+
+            <mohammad.financialsreport.customViews.MyImageView
+                android:id="@+id/arrowdown"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/images1" />
+
+            <mohammad.financialsreport.customViews.MyTextView
+                android:id="@+id/debtor"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:text="@string/Debtor"
+                android:textColor="@color/debtor"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+        <mohammad.financialsreport.customViews.MyButton
+            android:id="@+id/projectAll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/formitem"
+            android:gravity="right"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/projectAll"
+            android:textColor="#424643"
+            android:textSize="@dimen/_14ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="NotSibling">
+
+            <LinearLayout
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content">
+
+                <mohammad.financialsreport.customViews.MyImageView
+                    android:id="@+id/btndate"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/date"
+
+                    />
+
+                <mohammad.financialsreport.customViews.MyTextView
+                    android:id="@+id/dateStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/my_chart"
+                    android:gravity="center"
+                    android:hint="@string/startdate"
+                    android:textSize="@dimen/_14ssp" />
+            </LinearLayout>
 
 
-        <mohammad.financialsreport.customViews.MyImageView
-            android:id="@+id/arrowup"
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"
-            android:src="@drawable/arrowup" />
+            <LinearLayout
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp">
 
-        <mohammad.financialsreport.customViews.MyTextView
-            android:id="@+id/creditor"
-            android:layout_width="@dimen/_120sdp"
-            android:layout_height="@dimen/_20sdp"
-            android:paddingRight="@dimen/_3sdp"
-            android:text="@string/Creditor"
-            android:textColor="@color/creditor"
-            android:textSize="@dimen/_12ssp" />
+                <mohammad.financialsreport.customViews.MyImageView
+                    android:id="@+id/btndate2"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/dateend" />
 
-        <mohammad.financialsreport.customViews.MyImageView
-            android:id="@+id/arrowdown"
-            android:layout_width="@dimen/_18sdp"
-            android:layout_height="@dimen/_20sdp"
-            android:src="@drawable/arrowdown" />
+                <mohammad.financialsreport.customViews.MyTextView
+                    android:id="@+id/dateEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/my_chart"
+                    android:gravity="center"
+                    android:hint="@string/enddate"
+                    android:textSize="@dimen/_14ssp" />
+            </LinearLayout>
 
-        <mohammad.financialsreport.customViews.MyTextView
-            android:id="@+id/debtor"
-            android:layout_width="@dimen/_120sdp"
-            android:layout_height="@dimen/_20sdp"
-            android:paddingRight="@dimen/_5sdp"
-            android:text="@string/Debtor"
-            android:textColor="@color/debtor"
-            android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layoutDirection="locale">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabitem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:text="@string/operation" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabitem2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:text="@string/clearing" />
+
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl">
+
+        </android.support.v4.view.ViewPager>
 
     </LinearLayout>
-
-
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <android.support.design.widget.TabItem
-            android:text="کل"
-            android:id="@+id/tabitem1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <android.support.design.widget.TabItem
-            android:text="پروژه ها"
-            android:id="@+id/tabitem2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </android.support.design.widget.TabLayout>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </android.support.v4.view.ViewPager>
-
-</LinearLayout>

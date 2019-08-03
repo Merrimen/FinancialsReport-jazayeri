@@ -1,4 +1,4 @@
-package mohammad.financialsreport;
+package mohammad.financialsreport.utilities;
 
 import android.content.Context;
 import android.widget.Toast;
@@ -15,4 +15,6 @@ public class PublicMethods {
     public static String getData(String key){
         return Hawk.get(key);
     }
+
+
 }

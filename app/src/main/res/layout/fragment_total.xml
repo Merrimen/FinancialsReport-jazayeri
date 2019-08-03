@@ -1,24 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="@dimen/_12sdp"
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/relativelayout1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_12sdp">
 
-    <mohammad.financialsreport.customViews.MyTextView
-        android:layout_alignParentLeft="true"
-        android:id="@+id/pic"
-        android:layout_gravity="right"
-        android:text="عکس"
-        android:gravity="center"
-        android:background="@drawable/picture"
-        android:layout_width="@dimen/_90sdp"
-        android:layout_height="@dimen/_90sdp" />
-</RelativeLayout>
 
-</LinearLayout>
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <mohammad.financialsreport.customViews.MyButton
+                android:id="@+id/function"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/formitem"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/function"
+                android:textColor="#63c465"
+                android:textSize="@dimen/_14ssp" />
+
+            <mohammad.financialsreport.customViews.MyButton
+                android:id="@+id/reward"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/formitem"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/reward"
+                android:textColor="#6388c4"
+                android:textSize="@dimen/_14ssp" />
+
+            <mohammad.financialsreport.customViews.MyButton
+                android:id="@+id/penalty"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/formitem"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/penalty"
+                android:textColor="#de2727"
+                android:textSize="@dimen/_14ssp" />
+
+            <mohammad.financialsreport.customViews.MyButton
+                android:id="@+id/tax"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/formitem"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/tax"
+                android:textColor="#706c6c"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

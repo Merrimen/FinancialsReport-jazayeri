@@ -1,51 +1,50 @@
 package mohammad.financialsreport;
 
-import android.support.annotation.Nullable;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class PagerAdapter extends FragmentPagerAdapter {
 
     private int numOfTabs;
 
-
-    public PagerAdapter(FragmentManager fm,int numOfTabs) {
+    Bundle args;
+    public PagerAdapter(FragmentManager fm, int numOfTabs, Bundle args) {
         super(fm);
-        this.numOfTabs=numOfTabs;
+        this.args = args;
+        this.numOfTabs = numOfTabs;
     }
 
     @Override
     public Fragment getItem(int position) {
-        switch (position){
+        switch (position) {
             case 0:
-                return new FragmentTotal();
+                return FragmentTotal.getInstance(args);
             case 1:
-                return new FragmentProject();
-                default:
-                    return null;
+                return FragmentProject.getInstance(args);
+            default:
+                return null;
         }
     }
 
+
     @Override
     public CharSequence getPageTitle(int position) {
-        switch (position){
+        switch (position) {
             case 0:
-                return "کل";
+                return "کارکرد";
             case 1:
-                return "پروژه ها";
+                return "تسویه";
         }
 
         return super.getPageTitle(position);
     }
+
     @Override
     public int getCount() {
         return numOfTabs;
     }
-
 
 
 }

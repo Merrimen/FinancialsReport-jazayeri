@@ -5,4 +5,11 @@
     <color name="colorAccent">#D81B60</color>
     <color name="creditor">#83ca82</color>
     <color name="debtor">#d11515</color>
+    <color name="base">#eacece</color>
+    <color name="error">#e62b2b</color>
+    <color name="hint">#beb175</color>
+    <color name="arrow">#8c876d</color>
+    <color name="floating_label">#c4ab35</color>
+    <color name="highlight">#699474</color>
+
 </resources>

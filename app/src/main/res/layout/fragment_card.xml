@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <mohammad.financialsreport.customViews.MyEditText
+        android:inputType="number"
+        android:id="@+id/card_number"
+        android:textSize="@dimen/_16ssp"
+        android:hint="@string/card_number"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <mohammad.financialsreport.customViews.MyEditText
+        android:inputType="text"
+        android:id="@+id/name_card_owner"
+        android:hint="@string/name_card_owner"
+        android:textSize="@dimen/_16ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <mohammad.financialsreport.customViews.MyEditText
+        android:inputType="text"
+        android:id="@+id/name_bank_card"
+        android:hint="@string/name_bank"
+        android:textSize="@dimen/_16ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <mohammad.financialsreport.customViews.MyButton
+        android:id="@+id/insertCard"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_gravity="center"
+        android:hint="@string/insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

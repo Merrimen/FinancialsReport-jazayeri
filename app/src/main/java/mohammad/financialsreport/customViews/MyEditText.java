@@ -13,4 +13,7 @@ public class MyEditText extends AppCompatEditText {
         super(context, attrs);
     }
 
+    public String text(){
+        return this.getText().toString();
+    }
 }

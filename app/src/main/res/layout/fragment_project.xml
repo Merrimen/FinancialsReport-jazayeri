@@ -1,16 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="@dimen/_12sdp"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <mohammad.financialsreport.customViews.MyTextView
-        android:id="@+id/project"
-        android:layout_gravity="center"
-        android:textSize="@dimen/_20ssp"
-        android:text="this is about projects"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_12sdp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechartProject"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <mohammad.financialsreport.customViews.MyButton
+            android:id="@+id/deposited"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/formitem"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/deposited"
+            android:textColor="#63c465"
+            android:textSize="@dimen/_14ssp" />
+
+        <mohammad.financialsreport.customViews.MyButton
+            android:id="@+id/remain"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/formitem"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/remain"
+            android:textColor="#6388c4"
+            android:textSize="@dimen/_14ssp" />
+
+
+    </LinearLayout>
+
 
 </LinearLayout>
+    </ScrollView>
